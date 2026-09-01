@@ -1,0 +1,37 @@
+{
+  "name": "movies-website",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev-server": "npx parcel src/index.html",
+    "dev": " concurrently \"npm run sass-watch\" \"npm run dev-server\"",
+    "build": "parcel build src/index.html --public-url /parcelPractice/",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build",
+    "sass-compile": "sass src/sass/main.scss dist/css/style.css",
+    "sass-watch": "sass --watch src/sass/main.scss dist/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmsonixx/movies-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/mmsonixx/movies-website/issues"
+  },
+  "homepage": "https://github.com/mmsonixx/movies-website#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.3.1",
+    "gh-pages": "^6.3.0",
+    "parcel": "^2.16.4",
+    "simplelightbox": "^2.14.3"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.5",
+    "parcel-transformer-hbs": "^1.0.4",
+    "sass": "^1.103.1"
+  }
+}

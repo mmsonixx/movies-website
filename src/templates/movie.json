@@ -1,0 +1,195 @@
+[
+    {
+    "title": "Shrek",
+    "year": 2001,
+    "description":
+      "Unexpected partners - the sullen giant Shrek and a witty donkey - intend to rescue the princess from the clutches of a fire-breathing dragon.",
+    "rating": 7.9,
+    "poster":
+      "https://tse2.mm.bing.net/th/id/OIP.YG7VwpcKVATC48gSuTsPUAHaLD?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "genre": ["comedy", "family"],
+    "trailer": "https://occ-0-4012-1432.1.nflxso.net/so/soa6/188/1815650849355075585.mp4?v=1&amp;e=1788298210&amp;t=hkkH3CHsmmPy5S1syRF4ui-hLYw"
+  },
+  {
+    "title": "Puss in Boots",
+    "year": 2010,
+    "description":
+      "The legendary cat travels to the land of giants with Humpty Dumpty and Kitty Softpaw to retrieve the greatest treasure of all: the Goose That Lays the Golden Eggs.",
+    "rating": 8.8,
+    "poster": "https://m.media-amazon.com/images/S/pv-target-images/179796d91f003af3316010ead6ac917091af3b1c5ab5f96482c127e628f87cb4.jpg",
+    "genre": ["comedy", "family"],
+     "trailer": "https://occ-0-3565-1432.1.nflxso.net/so/soa3/074/2081783960921394689.mp4?v=1&amp;e=1788326258&amp;t=LmxPZoWviw3ypuTiX0aNFKTVlsA"
+  },
+  {
+    "title": "Spider-Man",
+    "year": 2002,
+    "description":
+      "After a genetically enhanced spider bites him, shy teen Peter Parker develops web-slinging, wall-climbing powers and meets a dangerous new foe.",
+    "rating": 8.1,
+    "poster":
+      "https://tse4.mm.bing.net/th/id/OIP.RCv72-4bmbT9CeUKaLqo7gHaLH?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "genre": ["sci-fi", "action", "adventure"],
+     "trailer": "https://occ-0-4012-1432.1.nflxso.net/so/soa7/077/1807905288055973377.mp4?v=1&amp;e=1788327277&amp;t=MAvat6T-vGGxWJnMK2b7gjMAuk0"
+  },
+  {
+    "title": "Frankenstein",
+    "year": 2025,
+    "description":
+      "Oscar winner Guillermo del Toro reimagines Mary Shelley's classic tale of a brilliant scientist and the creature his monstrous ambition brings to life.",
+    "rating": 7.4,
+    "poster": "https://theartsshelf.com/wp-content/uploads/2025/10/Guillermo-del-Toros-Frankenstein-Creature-Artwork-Reveal.jpg",
+    "genre": ["thriller", "sci-fi", "drama"],
+    "trailer": "https://occ-0-4012-1432.1.nflxso.net/so/soa4/580/1922535565171189249.mp4?v=1&amp;e=1788327509&amp;t=b7qxNeKycMkcgefRZQCiPAmhQmw"
+  },
+  {
+    "title": "Parasite",
+    "year": 2019,
+    "description":
+      "Бідна родина проникає у життя заможних людей з неочікуваними наслідками.",
+    "rating": 8.5,
+    "poster":
+      "https://image.tmdb.org/t/p/original/dwkDeJXXaHVuIhcyCxUdb3YctxY.jpg",
+    "genre": ["drama", "thriller"]
+  },
+  {
+    "title": "Interstellar",
+    "year": 2014,
+    "description":
+      "Астронавти шукають новий дім для людства за межами Сонячної системи.",
+    "rating": 8.6,
+    "poster": "https://m.media-amazon.com/images/I/514zBLkyJcL.jpg",
+    "genre": ["adventure", "drama", "sci-fi"]
+  },
+  {
+    "title": "Gladiator",
+    "year": 2000,
+    "description":
+      "Римський генерал стає гладіатором, щоб помститися імператору.",
+    "rating": 8.5,
+    "poster": "https://m.media-amazon.com/images/I/912Ht9rUWWS.jpg",
+    "genre": ["action", "drama"]
+  },
+  {
+    "title": "Spider-Man 2",
+    "year": 2004,
+    "description": "With Peter Parker's secret life as Spider-Man taking a toll, he considers hanging up his web, only to face another fight against supervillain Doc Ock.",
+    "rating": 8,
+    "poster": "https://assets.mycast.io/posters/the-amazing-spider-man-mcu-style-fan-casting-poster-197843-medium.jpg?1653164794",
+    "genre": ["sci-fi", "action", "adventure"],
+    "trailer": "https://occ-0-4012-1432.1.nflxso.net/so/soa2/962/1807904460616264704.mp4?v=1&amp;e=1788327903&amp;t=gnX4BVCJiCzyL42MOh7kccWatEs"
+  },
+  {
+    "title": "La La Land",
+    "year": 2016,
+    "description":
+      "Музичний роман між джазовим піаністом і акторкою в Лос-Анджелесі.",
+    "rating": 8.0,
+    "poster": "https://m.media-amazon.com/images/I/91jrKX9xjQL._AC_SL1500_.jpg",
+    "genre": ["drama", "music", "romance"]
+  },
+  {
+    "title": "Spirited Away",
+    "year": 2001,
+    "description":
+      "A 10-year-old girl named Chihiro wanders into a mysterious world where a witch rules — and those who disobey her are turned into animals.",
+    "rating": 8.6,
+    "poster":
+      "https://m.media-amazon.com/images/I/61ON14PVzoL._AC_UF894,1000_QL80_.jpg",
+    "genre": ["animation", "adventure", "family"],
+    "trailer":"https://occ-0-3565-1432.1.nflxso.net/so/soa5/510/1686441510.mp4?v=1&amp;e=1788327070&amp;t=bP1mWXv64D13kXLfBXKoMYLhvMw" 
+   },
+  {
+    "title": "The Dark Knight",
+    "year": 2008,
+    "description": "Бетмен протистоїть Джокеру, що тероризує місто Готем.",
+    "rating": 9.0,
+    "poster":
+      "https://m.media-amazon.com/images/I/5151N2hUPiL._AC_UF894,1000_QL80_.jpg",
+    "genre": ["action", "crime", "drama"]
+  },
+  {
+    "title": "Whiplash",
+    "year": 2014,
+    "description":
+      "Молодий барабанщик прагне величі під жорстким наглядом викладача.",
+    "rating": 8.5,
+    "poster": "https://i.ebayimg.com/images/g/5PgAAOSwEKRhZOs7/s-l1200.jpg",
+    "genre": ["drama", "music"]
+  },
+  {
+    "title": "The Grand Budapest Hotel",
+    "year": 2014,
+    "description":
+      "Пригоди ексцентричного консьєржа та юного помічника в готелі.",
+    "rating": 8.1,
+    "poster": "https://printler.com/media/photo/107028.jpg",
+    "genre": ["adventure", "comedy", "crime"]
+  },
+  {
+    "title": "Fight Club",
+    "year": 1999,
+    "description":
+      "Білий комірець створює підпільний клуб боїв із харизматичним незнайомцем.",
+    "rating": 8.8,
+    "poster": "https://content2.rozetka.com.ua/goods/images/big/236096129.jpg",
+    "genre": ["drama"]
+  },
+  {
+    "title": "WALL·E",
+    "year": 2008,
+    "description":
+      "Маленький робот прибиральник мріє про любов у постапокаліптичному майбутньому.",
+    "rating": 8.4,
+    "poster":
+      "https://www.tallengestore.com/cdn/shop/products/WALL_E-HollywoodAnimationClassicMoviePoster_e1aa7d6e-de2c-4476-9793-e2c7dd74e6aa.jpg?v=1591603143",
+    "genre": ["animation", "adventure", "family"]
+  },
+  {
+    "title": "Coco",
+    "year": 2017,
+    "description":
+      "Музично обдарований хлопчик потрапляє до світу мертвих, шукаючи правду про родину.",
+    "rating": 8.4,
+    "poster": "https://cdn.europosters.eu/image/750/56183.jpg",
+    "genre": ["animation", "adventure", "family"]
+  },
+  {
+    "title": "Django Unchained",
+    "year": 2012,
+    "description":
+      "Звільнений раб шукає дружину, яку утримує безжальний плантатор.",
+    "rating": 8.5,
+    "poster": "https://content1.rozetka.com.ua/goods/images/big/434339583.jpg",
+    "genre": ["drama", "western"]
+  },
+  {
+    "title": "Her",
+    "year": 2013,
+    "description":
+      "Самотній чоловік закохується в операційну систему з штучним інтелектом.",
+    "rating": 8.0,
+    "poster":
+      "https://i.etsystatic.com/17257718/r/il/93e590/2380694494/il_fullxfull.2380694494_yrn8.jpg",
+    "genre": ["drama", "romance", "sci-fi"]
+  },
+  {
+    "title": "The Social Network",
+    "year": 2010,
+    "description":
+      "Історія створення Facebook та конфліктів навколо його засновників.",
+    "rating": 7.8,
+    "poster":
+      "https://m.media-amazon.com/images/M/MV5BMjlkNTE5ZTUtNGEwNy00MGVhLThmZjMtZjU1NDE5Zjk1NDZkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "genre": ["biography", "drama"]
+  },
+  {
+    "title": "Arrival",
+    "year": 2016,
+    "description":
+      "Лінгвістка намагається зрозуміти мову прибульців, щоб врятувати світ.",
+    "rating": 7.9,
+    "poster":
+      "https://i.ebayimg.com/00/s/MTYwMFgxMDM1/z/vhgAAOSwB09YK28I/$_57.JPG?set_id=8800005007",
+    "genre": ["drama", "mystery", "sci-fi"]
+  }
+]

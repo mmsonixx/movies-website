@@ -1,0 +1,16 @@
+<ul class="movie_list">
+  {{#each movie}}
+    <li class="movie_item">
+      <h2 class="item_subtitle">{{title}}</h2>
+      <p class="item_year">{{year}}</p>
+      <p class="item_description">{{description}}</p>
+      <p class="item_rating">{{rating}}</p>
+      <img src={{poster}} alt={{title}} class="item_poster" />
+      <p class="item_genre"> {{genre}} </p>
+        <button
+        class="trailer-button"
+        type="button"
+        data-trailer="{{trailer}}"> ▶ Дивитися трейлер </button>
+    </li>
+  {{/each}}
+</ul>
