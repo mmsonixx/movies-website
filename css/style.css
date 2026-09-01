@@ -1,0 +1,626 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  line-height: 0;
+  display: block;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+.uiverse-midnight-sky {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #050505;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* =========================
+   SKY
+========================= */
+.uiverse-midnight-sky .sky-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: #050505;
+}
+
+/* =========================
+   STARS
+========================= */
+.uiverse-midnight-sky .stars {
+  position: absolute;
+  inset: 0;
+  background-repeat: repeat;
+  pointer-events: none;
+}
+
+/* Small stars */
+.uiverse-midnight-sky .stars-1 {
+  background-image: radial-gradient(1px 1px at 10% 10%, #fff, transparent), radial-gradient(1px 1px at 30% 20%, #fff, transparent), radial-gradient(1px 1px at 50% 50%, #fff, transparent), radial-gradient(1px 1px at 70% 30%, #fff, transparent), radial-gradient(1px 1px at 90% 10%, #fff, transparent);
+  background-size: 200px 200px;
+  animation: twinkle 3s ease-in-out infinite;
+}
+
+/* Medium stars */
+.uiverse-midnight-sky .stars-2 {
+  background-image: radial-gradient(1.5px 1.5px at 20% 40%, #fff, transparent), radial-gradient(1.5px 1.5px at 60% 85%, #fff, transparent), radial-gradient(1.5px 1.5px at 85% 65%, #fff, transparent);
+  background-size: 300px 300px;
+  animation: twinkle 5s ease-in-out infinite 1s;
+}
+
+/* Large stars */
+.uiverse-midnight-sky .stars-3 {
+  background-image: radial-gradient(2px 2px at 40% 70%, #fff, transparent), radial-gradient(2px 2px at 10% 80%, #fff, transparent), radial-gradient(2px 2px at 80% 40%, #fff, transparent);
+  background-size: 400px 400px;
+  animation: twinkle 7s ease-in-out infinite 2s;
+}
+
+/* =========================
+   METEORS
+========================= */
+.uiverse-midnight-sky .meteor {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Meteor tail */
+.uiverse-midnight-sky .meteor::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 80px;
+  height: 1px;
+  background: linear-gradient(90deg, #fff, transparent);
+}
+
+/* Meteor 1 */
+.uiverse-midnight-sky .m1 {
+  top: 10%;
+  left: 110%;
+  animation: shoot 8s linear infinite;
+}
+
+/* Meteor 2 */
+.uiverse-midnight-sky .m2 {
+  top: 30%;
+  left: 110%;
+  animation: shoot 12s linear infinite 4s;
+}
+
+/* Meteor 3 */
+.uiverse-midnight-sky .m3 {
+  top: 50%;
+  left: 110%;
+  animation: shoot 10s linear infinite 2s;
+}
+
+/* =========================
+   MOON
+========================= */
+.uiverse-midnight-sky .moon {
+  position: absolute;
+  top: 15%;
+  right: 15%;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: transparent;
+  box-shadow: 15px 15px 0 0 #fdfbd3;
+  filter: drop-shadow(0 0 15px rgba(253, 251, 211, 0.4));
+  z-index: 10;
+}
+
+.header {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.header-container {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.movie_list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 40px 0;
+}
+
+.movie_item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 500px;
+  padding: 18px;
+  background: linear-gradient(145deg, #111113, #070708);
+  border: 1px solid #29292d;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie_item:hover {
+  transform: translateY(-8px) scale(1.02);
+  border-color: #777;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.9), 0 0 25px rgba(255, 255, 255, 0.08);
+}
+
+.item_poster {
+  width: 100%;
+  height: 350px;
+  display: block;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  background: #050505;
+  transition: transform 0.4s ease;
+}
+
+.movie_item:hover .item_poster {
+  transform: scale(1.03);
+}
+
+.item_subtitle {
+  margin: 0 0 8px;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.item_year {
+  margin: 0 0 8px;
+  color: #888;
+  font-size: 14px;
+}
+
+.item_rating {
+  width: fit-content;
+  margin: 0 0 10px;
+  padding: 5px 9px;
+  border-radius: 6px;
+  background: #fff;
+  color: #000;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.item_genre {
+  margin: 0 0 12px;
+  color: #aaa;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+
+.item_description {
+  margin: 0 0 18px;
+  color: #999;
+  font-size: 14px;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.trailer-button {
+  margin-top: auto;
+  width: 100%;
+  padding: 11px 15px;
+  border: 1px solid #555;
+  border-radius: 8px;
+  background: transparent;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.trailer-button:hover {
+  background: #fff;
+  color: #000;
+  border-color: #fff;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+}
+
+@media screen and (max-width: 1100px) {
+  .movie_list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 800px) {
+  .movie_list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 550px) {
+  .movie_list {
+    grid-template-columns: 1fr;
+    padding: 20px 15px;
+  }
+  .movie_item {
+    min-height: auto;
+  }
+  .item_poster {
+    height: 400px;
+  }
+}
+.trailer-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.9);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  z-index: 9999;
+}
+
+.trailer-modal.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.trailer-modal__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(8px);
+}
+
+.trailer-modal__content {
+  position: relative;
+  z-index: 2;
+  width: 80vw;
+  max-width: 900px;
+  aspect-ratio: 16/9;
+  background: #000;
+  border-radius: 16px;
+  border: 1px solid #444;
+  box-shadow: 0 0 50px rgba(255, 255, 255, 0.15);
+}
+
+.trailer-video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+  border-radius: 16px;
+  background: #000;
+}
+
+.trailer-modal__close {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid #444;
+  background: #0b0b0d;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 10;
+  transition: 0.2s ease;
+}
+
+.trailer-modal__close:hover {
+  background: white;
+  color: black;
+  transform: rotate(90deg);
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+.sort-select {
+  position: relative;
+  width: 200px;
+}
+
+/* Главная кнопка */
+.sort-selected {
+  width: 100%;
+  height: 45px;
+  padding: 0 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #08080a;
+  color: #fff;
+  border: 1px solid #333;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.sort-selected:hover {
+  border-color: #777;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.08);
+}
+
+/* Стрелка */
+.sort-arrow {
+  width: 12px;
+  height: 12px;
+  fill: #fff;
+  transition: transform 0.3s ease;
+}
+
+.sort-select.open .sort-arrow {
+  transform: rotate(180deg);
+}
+
+/* Выпадающий список */
+.sort-options {
+  position: absolute;
+  top: calc(100% + 7px);
+  left: 0;
+  width: 100%;
+  padding: 6px;
+  background: #08080a;
+  border: 1px solid #333;
+  border-radius: 10px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-8px);
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+  z-index: 100;
+}
+
+.sort-select.open .sort-options {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Варианты */
+.sort-option {
+  width: 100%;
+  display: block;
+  padding: 9px 11px;
+  border: none;
+  border-radius: 7px;
+  background: transparent;
+  color: #aaa;
+  text-align: left;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.sort-option:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  padding-left: 16px;
+}
+
+.select {
+  position: relative;
+  width: 200px;
+}
+
+.selected {
+  width: 100%;
+  height: 45px;
+  padding: 0 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #08080a;
+  color: #fff;
+  border: 1px solid #333;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.selected:hover {
+  border-color: #777;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.08);
+}
+
+/* Стрілка */
+.arrow {
+  width: 12px;
+  height: 12px;
+  fill: #fff;
+  transition: transform 0.3s ease;
+}
+
+.select.open .arrow {
+  transform: rotate(180deg);
+}
+
+/* Выпадающее меню */
+.options {
+  position: absolute;
+  top: calc(100% + 7px);
+  left: 0;
+  width: 100%;
+  padding: 6px;
+  background: #08080a;
+  border: 1px solid #333;
+  border-radius: 10px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.8);
+  max-height: 280px;
+  overflow-y: auto;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-8px);
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+  z-index: 100;
+}
+
+.select.open .options {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Жанры */
+.option {
+  width: 100%;
+  display: block;
+  padding: 9px 11px;
+  border: none;
+  border-radius: 7px;
+  background: transparent;
+  color: #aaa;
+  text-align: left;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.option:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  padding-left: 16px;
+}
+
+/* Скролл */
+.options::-webkit-scrollbar {
+  width: 4px;
+}
+
+.options::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.options::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 10px;
+}
+
+.search {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: #08080a;
+  border: 1px solid #333;
+  border-radius: 50px;
+  overflow: hidden;
+  transition: 0.5s;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+}
+
+.search:hover {
+  width: 350px;
+  border-color: #777;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.search input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 0 70px 0 25px;
+  font-size: 1rem;
+  background-color: transparent;
+  color: #fff;
+  outline: none;
+}
+
+.search input::placeholder {
+  color: #888;
+}
+
+.search_icon {
+  position: absolute;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+/*# sourceMappingURL=style.css.map */

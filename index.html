@@ -1,0 +1,142 @@
+<!DOCTYPE html><html lang=en><link rel=stylesheet href=/parcelPractice/movies-website.f80da890.css><meta charset=UTF-8><meta name=viewport content="width=device-width, initial-scale=1.0"><link rel=stylesheet href=/parcelPractice/movies-website.e91dbcbd.css><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css><title>Movie</title><body>
+    <header class=header>
+      <div class="container header-container">
+        <div class=search>
+          <form class=search-form>
+            <label>
+              <input id=search-movie type=search placeholder=Search data-search>
+              <div class=search_icon>
+                <i class="fa-magnifying-glass fa-solid"></i>
+              </div>
+            </label>
+          </form>
+        </div>
+       <div class=ganre data-filter>
+
+  <div class=select>
+    <button class=selected type=button>
+      <span class=selected-text>Оберіть жанр</span>
+
+      <svg xmlns:xmlns=http://www.w3.org/2000/svg class=arrow viewBox="0 0 512 512"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192Z"/></svg>
+    </button>
+
+    <div class=options>
+
+      <button class=option data-ganre=all type=button>
+        Всі жанри
+      </button>
+
+      <button class=option data-ganre=drama type=button>
+        Драма
+      </button>
+
+      <button class=option data-ganre=crime type=button>
+        Кримінал
+      </button>
+
+      <button class=option data-ganre=mystery type=button>
+        Містика
+      </button>
+
+      <button class=option data-ganre=biography type=button>
+        Біографічні
+      </button>
+
+      <button class=option data-ganre=western type=button>
+        Вестерн
+      </button>
+
+      <button class=option data-ganre=comedy type=button>
+        Комедія
+      </button>
+
+      <button class=option data-ganre=family type=button>
+        Сімейні
+      </button>
+
+      <button class=option data-ganre=animation type=button>
+        Анімаційні
+      </button>
+
+      <button class=option data-ganre=romance type=button>
+        Романтичні
+      </button>
+
+      <button class=option data-ganre=music type=button>
+        Мюзикли
+      </button>
+
+      <button class=option data-ganre=adventure type=button>
+        Пригоди
+      </button>
+
+      <button class=option data-ganre=thriller type=button>
+        Триллер
+      </button>
+
+      <button class=option data-ganre=sci-fi type=button>
+        Сай-фай
+      </button>
+
+      <button class=option data-ganre=action type=button>
+        Екшн
+      </button>
+
+    </div>
+  </div>
+</div>
+       <div class=sort>
+  <div class=sort-select>
+
+    <button class=sort-selected type=button>
+      <span class=sort-selected-text>Sort by</span>
+
+      <svg xmlns:xmlns=http://www.w3.org/2000/svg class=sort-arrow viewBox="0 0 512 512"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192Z"/></svg>
+    </button>
+
+    <div class=sort-options>
+
+      <button class=sort-option type=button data-sort=year>
+        Рік
+      </button>
+
+      <button class=sort-option type=button data-sort=rating>
+        Оцінка
+      </button>
+
+    </div>
+
+  </div>
+</div>
+    </div></header>
+    <div class=uiverse-midnight-sky>
+      <div class=sky-canvas>
+        <div class="stars stars-1"></div>
+        <div class="stars stars-2"></div>
+        <div class="stars stars-3"></div>
+
+        <div class="m1 meteor"></div>
+        <div class="m2 meteor"></div>
+        <div class="m3 meteor"></div>
+
+        <div class=moon></div>
+      </div>
+    </div>
+<div class=container>
+    <dіv class=movie data-movies> </dіv>
+    </div>
+   <div class=trailer-modal data-modal>
+  <div class=trailer-modal__overlay data-close-modal></div>
+
+  <div class=trailer-modal__content>
+    <button class=trailer-modal__close type=button data-close-modal>
+      ×
+    </button>
+
+    <video class=trailer-video data-video controls playsinline preload=metadata></video>
+  </div>
+</div>
+    <script src=https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js></script>
+    <script type=module src=/parcelPractice/movies-website.3664f22b.js></script>
+  
+
