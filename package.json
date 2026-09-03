@@ -5,7 +5,7 @@
   "scripts": {
     "dev-server": "npx parcel src/index.html",
     "dev": " concurrently \"npm run sass-watch\" \"npm run dev-server\"",
-    "build": "parcel build src/index.html --public-url /parcelPractice/",
+    "build": "parcel build src/index.html --public-url /movies-website/",
     "deploy": "gh-pages -d dist",
     "predeploy": "npm run build",
     "sass-compile": "sass src/sass/main.scss dist/css/style.css",
