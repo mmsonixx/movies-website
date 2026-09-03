@@ -22,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/mmsonixx/movies-website/issues"
   },
-  "homepage": "https://github.com/mmsonixx/movies-website#readme",
+  "homepage": "https://mmsonixx.github.io/movies-website/",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^7.3.1",
     "gh-pages": "^6.3.0",
