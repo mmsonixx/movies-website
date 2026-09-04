@@ -8,7 +8,8 @@
 
 .movie_item {
   position: relative;
-
+  opacity: 0;
+  transform: translateY(60px);
   display: flex;
   flex-direction: column;
 
@@ -31,12 +32,16 @@
     0 10px 30px rgba(0, 0, 0, 0.7);
 
   transition:
-    transform 0.3s ease,
+  opacity 0.6s ease,
+    transform 0.6s ease,
     border-color 0.3s ease,
     box-shadow 0.3s ease;
 }
 
-
+.movie_item.show {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 
 .movie_item:hover {
