@@ -176,17 +176,24 @@ a {
 }
 
 .movie_item {
+  opacity: 0;
   background: linear-gradient(145deg, #111113, #070708);
   border: 1px solid #29292d;
   border-radius: 16px;
   flex-direction: column;
   min-height: 500px;
   padding: 18px;
-  transition: transform .3s, border-color .3s, box-shadow .3s;
+  transition: opacity .6s, transform .6s, border-color .3s, box-shadow .3s;
   display: flex;
   position: relative;
   overflow: hidden;
+  transform: translateY(60px);
   box-shadow: 0 10px 30px #000000b3;
+}
+
+.movie_item.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .movie_item:hover {

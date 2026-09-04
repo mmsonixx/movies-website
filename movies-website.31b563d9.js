@@ -841,6 +841,23 @@ function closeModal() {
 document.addEventListener("keydown", (event)=>{
     if (event.key === "Escape") closeModal();
 });
+const observer = new IntersectionObserver((entries)=>{
+    entries.forEach((entry)=>{
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+            observer.unobserve(entry.target);
+        }
+    });
+}, {
+    threshold: 0.2
+});
+function observeMovieCards() {
+    const movieItems = document.querySelectorAll(".movie_item");
+    movieItems.forEach((item)=>{
+        observer.observe(item);
+    });
+}
+observeMovieCards();
 
 },{"./js/movie-list.js":"7aved","./js/filter.js":"6ibuJ","./js/search.js":"2ZG6y","./js/sort.js":"3Dq0N","simplelightbox":"jR5uu","simplelightbox/dist/simple-lightbox.min.css":"kaxSc","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"7aved":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
