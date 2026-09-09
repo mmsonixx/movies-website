@@ -1,0 +1,28 @@
+:root {
+  --bg-color: #08080a;
+  --text-color: #fff;
+  --secondary-text: #999;
+  --card-bg-1: #111113;
+  --card-bg-2: #070708;
+  --border-color: #333;
+  --button-border: #555;
+  --option: #aaa;
+   --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    --hover-shadow:  0 15px 40px rgba(0, 0, 0, 0.9),
+    0 0 25px rgba(255, 255, 255, 0.08)
+  
+}
+.light-theme {
+  --bg-color: #fff;
+  --text-color: #222;
+  --secondary-text: #666;
+  --card-bg-1: #fff;
+  --card-bg-2: #f2f2f2;
+  --border-color: #ddd;
+  --button-border: #aaa;
+  --option: #878787;
+  --box-shadow: 0 10px 30px rgba(224, 214, 214, 0.962);
+ --hover-shadow:
+    0 15px 40px rgba(206, 199, 199, 0.885),
+    0 0 25px rgb(252, 245, 245);
+}

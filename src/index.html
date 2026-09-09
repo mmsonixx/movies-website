@@ -146,6 +146,16 @@
     </div>
 
   </div>
+  
+</div>
+<div class="switch">
+  <label class="theme-switch">
+  <input type="checkbox" id="theme-toggle">
+  <span class="slider">
+    <span class="moon-switch"><i class="fa-solid fa-moon"></i></span>
+    <span class="sun-switch"><i class="fa-solid fa-sun"></i></span>
+  </span>
+</label>
 </div>
     </header>
     <div class="uiverse-midnight-sky">
@@ -184,6 +194,30 @@
         preload="metadata"
     ></video>
   </div>
+</div>
+
+<div class="form">
+  <div class='container form_container'>
+
+  <form id="user-form">
+  <label>
+    Ім'я:
+    <input type="text" id="name" placeholder="Введіть ім'я" />
+  </label>
+
+  <label>
+    Email:
+    <input type="email" id="email" placeholder="Введіть email" />
+  </label>
+
+  <label>
+    Вік:
+    <input type="number" id="age" placeholder="Введіть вік" />
+  </label>
+
+  <button type="submit">Зберегти</button>
+</form>
+ </div>
 </div>
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
     <script type="module" src="./index.js"></script>

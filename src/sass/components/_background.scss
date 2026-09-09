@@ -235,3 +235,98 @@
 
   z-index: 10;
 }
+
+// =========================
+// ПЛАВНЫЙ ПЕРЕХОД ТЕМЫ
+// =========================
+
+.uiverse-midnight-sky,
+.uiverse-midnight-sky .sky-canvas {
+  transition: background-color 1s ease;
+}
+
+
+// =========================
+// СВЕТЛАЯ ТЕМА
+// =========================
+
+.light-theme .uiverse-midnight-sky,
+.light-theme .uiverse-midnight-sky .sky-canvas {
+  background-color: #add8e9;
+}
+
+
+// Звёзды плавно исчезают
+.uiverse-midnight-sky .stars {
+  transition: opacity 0.8s ease;
+}
+
+.light-theme .uiverse-midnight-sky .stars {
+  opacity: 0;
+}
+
+
+// Метеоры исчезают
+.uiverse-midnight-sky .meteor {
+  transition: opacity 0.5s ease;
+}
+
+.light-theme .uiverse-midnight-sky .meteor {
+  opacity: 0;
+}
+
+
+// =========================
+// ЛУНА
+// =========================
+
+.uiverse-midnight-sky .moon {
+  transition:
+    opacity 0.8s ease,
+    transform 1s ease;
+}
+
+.light-theme .uiverse-midnight-sky .moon {
+  opacity: 0;
+  transform: translate(100px, -100px);
+}
+
+
+// =========================
+// СОЛНЦЕ
+// =========================
+
+.uiverse-midnight-sky::after {
+  content: "";
+
+  position: absolute;
+
+  top: 12%;
+  right: 12%;
+
+  width: 90px;
+  height: 90px;
+
+  background: #ffd93d;
+  border-radius: 50%;
+
+  opacity: 0;
+
+  transform: translate(100px, -100px) scale(0.5);
+
+  box-shadow:
+    0 0 30px rgba(255, 217, 61, 0.6),
+    0 0 60px rgba(255, 217, 61, 0.3);
+
+  transition:
+    opacity 1s ease,
+    transform 1s ease;
+}
+
+
+// Когда включена светлая тема
+.light-theme .uiverse-midnight-sky::after {
+  opacity: 1;
+
+  transform: translate(0, 0) scale(1);
+}

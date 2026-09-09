@@ -1,0 +1,63 @@
+
+
+
+
+.theme-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 32px;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  inset: 0;
+  background-color: var(--bg-color);
+  border-radius: 25px;
+  border: 1px solid var(--border-color);
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  left: 3px;
+  top: 3px;
+  background-color: var(--text-color);
+  border-radius: 50%;
+  transition: 0.3s;
+  z-index: 2;
+}
+
+
+.moon-switch,
+.sun-switch {
+  position: absolute;
+  top: 6px;
+  font-size: 18px;
+}
+
+.moon-switch {
+  left: 7px;
+}
+
+.sun-switch {
+  right: 7px;
+  color: var(--text-color) ;
+}
+
+.theme-switch input:checked + .slider {
+  background-color: var(--bg-color);
+}
+
+.theme-switch input:checked + .slider::before {
+  transform: translateX(28px);
+}

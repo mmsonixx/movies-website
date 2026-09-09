@@ -1,6 +1,7 @@
 
 @use "./base/reset";
 @use "./base/common";
+@use './utils/variebles';
 @use "./components/background";
 @use "./components/header";
 @use "./components/movie";
@@ -8,3 +9,5 @@
 @use "./components/sort";
 @use "./components/genre";
 @use "./components/search";
+@use "./components/switch";
+@use './components/form';

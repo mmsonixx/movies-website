@@ -15,10 +15,11 @@
   align-items: center;
   justify-content: space-between;
 
-  background: #08080a;
-  color: #fff;
+  // background: #08080a;
+  background: var( --bg-color);
+  color: var(--text-color);
 
-  border: 1px solid #333;
+  border: 1px solid var(--border-color);
   border-radius: 10px;
 
   cursor: pointer;
@@ -32,7 +33,7 @@
   border-color: #777;
 
   box-shadow:
-    0 0 15px rgba(255, 255, 255, 0.08);
+    var(--box-shadow);
 }
 
 /* Стрілка */
@@ -41,7 +42,7 @@
   width: 12px;
   height: 12px;
 
-  fill: #fff;
+  fill: var(--text-color);
 
   transition: transform 0.3s ease;
 }
@@ -62,9 +63,9 @@
 
   padding: 6px;
 
-  background: #08080a;
+  background: var(--bg-color);
 
-  border: 1px solid #333;
+  border: 1px solid --border-color;
   border-radius: 10px;
 
   box-shadow:
@@ -107,7 +108,7 @@
 
   background: transparent;
 
-  color: #aaa;
+  color: var(--option);
 
   text-align: left;
 
@@ -121,7 +122,7 @@
 .option:hover {
   background: rgba(255, 255, 255, 0.08);
 
-  color: #fff;
+  color: var(--text-color);
 
   padding-left: 16px;
 }
@@ -137,6 +138,6 @@
 }
 
 .options::-webkit-scrollbar-thumb {
-  background: #444;
+  background: var(--button-border);
   border-radius: 10px;
 }
