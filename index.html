@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang=en><link rel=stylesheet href=/movies-website/movies-website.f80da890.css><meta charset=UTF-8><meta name=viewport content="width=device-width, initial-scale=1.0"><link rel=stylesheet href=/movies-website/movies-website.3853d971.css><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css><title>Movie</title><body>
+<!DOCTYPE html><html lang=en><link rel=stylesheet href=/movies-website/movies-website.f80da890.css><meta charset=UTF-8><meta name=viewport content="width=device-width, initial-scale=1.0"><link rel=stylesheet href=/movies-website/movies-website.2919a0b8.css><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css><title>Movie</title><body>
     <header class=header>
       <div class="container header-container">
         <div class=search>
@@ -107,6 +107,16 @@
     </div>
 
   </div>
+  
+</div>
+<div class=switch>
+  <label class=theme-switch>
+  <input type=checkbox id=theme-toggle>
+  <span class=slider>
+    <span class=moon-switch><i class="fa-moon fa-solid"></i></span>
+    <span class=sun-switch><i class="fa-solid fa-sun"></i></span>
+  </span>
+</label>
 </div>
     </div></header>
     <div class=uiverse-midnight-sky>
@@ -136,7 +146,31 @@
     <video class=trailer-video data-video controls playsinline preload=metadata></video>
   </div>
 </div>
+
+<div class=form>
+  <div class="container form_container">
+
+  <form id=user-form>
+  <label>
+    Ім'я:
+    <input id=name placeholder="Введіть ім'я">
+  </label>
+
+  <label>
+    Email:
+    <input type=email id=email placeholder="Введіть email">
+  </label>
+
+  <label>
+    Вік:
+    <input type=number id=age placeholder="Введіть вік">
+  </label>
+
+  <button>Зберегти</button>
+</form>
+ </div>
+</div>
     <script src=https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js></script>
-    <script type=module src=/movies-website/movies-website.bab29129.js></script>
+    <script type=module src=/movies-website/movies-website.03834158.js></script>
   
 
