@@ -5,6 +5,15 @@ import { movies, renderMovies } from "./js/movie-list.js";
 import { filterByGenre } from "./js/filter.js";
 import { searchMovies } from "./js/search.js";
 import { sortMovies } from "./js/sort.js";
+import { updateClock } from "./js/clock.js";
+
+const clock = document.querySelector("[data-clock]");
+
+updateClock(clock);
+
+setInterval(() => {
+  updateClock(clock);
+}, 1000);
 
 
 // ===============================
@@ -387,3 +396,4 @@ form.addEventListener("submit", event => {
   );
 
 });
+
