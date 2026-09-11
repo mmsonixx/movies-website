@@ -722,6 +722,12 @@ var _movieListJs = require("./js/movie-list.js");
 var _filterJs = require("./js/filter.js");
 var _searchJs = require("./js/search.js");
 var _sortJs = require("./js/sort.js");
+var _clockJs = require("./js/clock.js");
+const clock = document.querySelector("[data-clock]");
+(0, _clockJs.updateClock)(clock);
+setInterval(()=>{
+    (0, _clockJs.updateClock)(clock);
+}, 1000);
 // ===============================
 // MOVIES
 // ===============================
@@ -892,7 +898,7 @@ form.addEventListener("submit", (event)=>{
     localStorage.setItem("userData", JSON.stringify(userData));
 });
 
-},{"./js/movie-list.js":"7aved","./js/filter.js":"6ibuJ","./js/search.js":"2ZG6y","./js/sort.js":"3Dq0N","simplelightbox":"jR5uu","simplelightbox/dist/simple-lightbox.min.css":"kaxSc","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"7aved":[function(require,module,exports,__globalThis) {
+},{"./js/movie-list.js":"7aved","./js/filter.js":"6ibuJ","./js/search.js":"2ZG6y","./js/sort.js":"3Dq0N","simplelightbox":"jR5uu","simplelightbox/dist/simple-lightbox.min.css":"kaxSc","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","./js/clock.js":"03Dez"}],"7aved":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "renderMovies", ()=>renderMovies);
@@ -13858,6 +13864,18 @@ var _default = SimpleLightbox;
 exports["default"] = _default;
 global.SimpleLightbox = SimpleLightbox;
 
-},{}],"kaxSc":[function() {},{}]},["5j6Kf","a0t4e"], "a0t4e", "parcelRequire5cf8", {})
+},{}],"kaxSc":[function() {},{}],"03Dez":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "updateClock", ()=>updateClock);
+function updateClock(clock) {
+    const date = new Date();
+    const hours = String(date.getHours()).padStart(2, "0");
+    const minutes = String(date.getMinutes()).padStart(2, "0");
+    const seconds = String(date.getSeconds()).padStart(2, "0");
+    clock.textContent = `${hours}:${minutes}:${seconds}`;
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}]},["5j6Kf","a0t4e"], "a0t4e", "parcelRequire5cf8", {})
 
 //# sourceMappingURL=movies-website.31b563d9.js.map

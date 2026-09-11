@@ -856,4 +856,24 @@ body.modal-open {
   transform: translateY(0);
 }
 
+.clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg-color);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  height: 50px;
+  width: 100px;
+}
+
+.clock-time {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: monospace;
+  color: var(--text-color);
+}
+
 /*# sourceMappingURL=style.css.map */
