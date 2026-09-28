@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang=en><link rel=stylesheet href=/movies-website/movies-website.f80da890.css><meta charset=UTF-8><meta name=viewport content="width=device-width, initial-scale=1.0"><link rel=stylesheet href=/movies-website/movies-website.ea3ef653.css><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css><title>Movie</title><body>
+<!DOCTYPE html><html lang=en><link rel=stylesheet href=/movies-website/movies-website.f80da890.css><meta charset=UTF-8><meta name=viewport content="width=device-width, initial-scale=1.0"><link rel=stylesheet href=/movies-website/movies-website.4b1bea09.css><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css><title>Movie</title><body>
     <header class=header>
       <div class="container header-container">
         <div class=search>
@@ -15,7 +15,7 @@
 
   <div class=select>
     <button class=selected type=button>
-      <span class=selected-text>Оберіть жанр</span>
+      <span class=selected-text>Choose a genre</span>
 
       <svg xmlns:xmlns=http://www.w3.org/2000/svg class=arrow viewBox="0 0 512 512"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192Z"/></svg>
     </button>
@@ -23,63 +23,63 @@
     <div class=options>
 
       <button class=option data-ganre=all type=button>
-        Всі жанри
+        All genres
       </button>
 
       <button class=option data-ganre=drama type=button>
-        Драма
+       Drama
       </button>
 
       <button class=option data-ganre=crime type=button>
-        Кримінал
+        Crime
       </button>
 
       <button class=option data-ganre=mystery type=button>
-        Містика
+       Mysticа
       </button>
 
       <button class=option data-ganre=biography type=button>
-        Біографічні
+       Biographical
       </button>
 
       <button class=option data-ganre=western type=button>
-        Вестерн
+       Western
       </button>
 
       <button class=option data-ganre=comedy type=button>
-        Комедія
+        Comedy
       </button>
 
       <button class=option data-ganre=family type=button>
-        Сімейні
+        Family
       </button>
 
       <button class=option data-ganre=animation type=button>
-        Анімаційні
+      Animated
       </button>
 
       <button class=option data-ganre=romance type=button>
-        Романтичні
+        Romantic
       </button>
 
       <button class=option data-ganre=music type=button>
-        Мюзикли
+    Musicals
       </button>
 
       <button class=option data-ganre=adventure type=button>
-        Пригоди
+       Adventures
       </button>
 
       <button class=option data-ganre=thriller type=button>
-        Триллер
+       Thriller
       </button>
 
       <button class=option data-ganre=sci-fi type=button>
-        Сай-фай
+      Sci-fi
       </button>
 
       <button class=option data-ganre=action type=button>
-        Екшн
+       Action
       </button>
 
     </div>
@@ -97,11 +97,11 @@
     <div class=sort-options>
 
       <button class=sort-option type=button data-sort=year>
-        Рік
+        Year
       </button>
 
       <button class=sort-option type=button data-sort=rating>
-        Оцінка
+        Rating
       </button>
 
     </div>
@@ -157,25 +157,66 @@
 
   <form id=user-form>
   <label>
-    Ім'я:
-    <input id=name placeholder="Введіть ім'я">
+    Name:
+    <input id=name placeholder="Enter your name">
   </label>
 
   <label>
     Email:
-    <input type=email id=email placeholder="Введіть email">
+    <input type=email id=email placeholder="Enter your email">
   </label>
 
   <label>
-    Вік:
-    <input type=number id=age placeholder="Введіть вік">
+    Age:
+    <input type=number id=age placeholder="Enter your age">
   </label>
 
-  <button>Зберегти</button>
+  <button>Save</button>
 </form>
  </div>
 </div>
+  <footer class=footer>
+      <div class="container footer__container">
+        
+<ul class=footer__list>
+  <li class=footer__item>
+    <a class=footer__link>
+      <svg class=footer__icons><use href=/movies-website/symbol-defs.c5b0f01c.svg#icon-instagram /></svg>
+    </a>
+  </li>
+  <li class=footer__item>
+    <a class=footer__link>
+      <svg class=footer__icons><use href=/movies-website/symbol-defs.c5b0f01c.svg#icon-telegram /></svg>
+    </a>
+  </li>
+  <li class=footer__item>
+    <a class=footer__link>
+      <svg class=footer__icons><use href=/movies-website/symbol-defs.c5b0f01c.svg#icon-youtube /></svg>
+    </a>
+  </li>
+  <li class=footer__item>
+    <a class=footer__link>
+      <svg class=footer__icons><use href=/movies-website/symbol-defs.c5b0f01c.svg#icon-github /></svg>
+    </a>
+  </li>
+  <li class=footer__item>
+    <a class=footer__link>
+      <svg class=footer__icons><use href=/movies-website/symbol-defs.c5b0f01c.svg#icon-facebook /></svg>
+    </a>
+  </li>
+  <li class=footer__item>
+    <a class=footer__link>
+      <svg class=footer__icons><use href=/movies-website/symbol-defs.c5b0f01c.svg#icon-twitter /></svg>
+    </a>
+  </li>
+</ul>
+      <div class=footer__wrapper>
+        © 2026 
+        <a class=footer__link-logo href=#>Movies</a>
+      </div>
+      </div>
+    </footer>
     <script src=https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js></script>
-    <script type=module src=/movies-website/movies-website.c4d336df.js></script>
+    <script type=module src=/movies-website/movies-website.c5dbd013.js></script>
   
 

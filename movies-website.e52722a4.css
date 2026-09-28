@@ -841,4 +841,42 @@ body.modal-open {
   font-size: 18px;
   font-weight: 400;
 }
+
+.footer {
+  padding-top: 100px;
+  padding-bottom: 10px;
+}
+
+.footer__list {
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  display: flex;
+}
+
+.footer__item {
+  border: 1px solid var(--text-color);
+  border-radius: 60px;
+  padding: 15px;
+}
+
+.footer__link {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.footer__icons {
+  width: 25px;
+  height: 25px;
+  fill: var(--text-color);
+}
+
+.footer__wrapper {
+  color: var(--text-color);
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  display: flex;
+}
 /*# sourceMappingURL=movies-website.e52722a4.css.map */

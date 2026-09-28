@@ -1040,7 +1040,7 @@ const templateFunction = (0, _handlebarsDefault.default).template({
                     "column": 33
                 }
             }
-        }) : helper)) + '"> \u25B6 \u0414\u0438\u0432\u0438\u0442\u0438\u0441\u044F \u0442\u0440\u0435\u0439\u043B\u0435\u0440 </button>\r\n    </li>\r\n';
+        }) : helper)) + '"> \u25B6 Watch the trailer </button>\r\n    </li>\r\n';
     },
     "compiler": [
         8,
